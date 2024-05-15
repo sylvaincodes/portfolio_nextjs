@@ -44,7 +44,7 @@ function NavLinkDropdown({ title, items }: NavLinkDropdownProps) {
             <Menu>
                 {({ open }) => (
                     <>
-                        <Menu.Button className={clsx('text-accent-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold dark:text-accent-400 dark:font-semibold hover:text-accent-700 hover:dark:text-accent-300 ml-2 mr-2', 'bg-primary-600/[0.08] text-primary-900 rounded-full px-5 dark:bg-accent-400/10  ml-2')}>
+                        <Menu.Button className={clsx('text-accent-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold dark:text-accent-400 dark:font-semibold hover:text-accent-700 hover:dark:text-accent-300 ml-2 mr-2', 'bg-primary-600/[0.08] text-primary-400 rounded-full px-5 dark:bg-dark   ml-2')}>
                             {title}
                             <ChevronRightIcon
                                 className={clsx('h-3 w-3 rotate-90', [open && '-rotate-90'])}

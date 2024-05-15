@@ -16,7 +16,6 @@ const HeaderOne = () => {
     return (
         <header className={clsx('absolute h-[72px] top-0 bg-transparent  inset-x-0 z-[1000]', 
         // isScrolled && 'sticky backdrop-blur shadow-sm dark:shadow-slate-500'
-
         )}>
             <QuickAccess/>
             <Container>

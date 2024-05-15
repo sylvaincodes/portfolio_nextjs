@@ -1,5 +1,5 @@
+import Footer from "@/components/wrappers/footer/footer"
 import HeaderOne from "@/components/wrappers/header/header-one"
-
 
 //Global seo 
 export const metadata: Metadata = {
@@ -57,6 +57,7 @@ export default function RootLayout({
       <body>
         <HeaderOne />
         {children}
+        <Footer />
       </body>
     </html>
   )

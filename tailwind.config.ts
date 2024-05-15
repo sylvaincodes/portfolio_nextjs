@@ -39,7 +39,7 @@ const config = {
         slate: colors.slate,
 
         dark: "#0c1222",
-
+    
         // rose
         primary: {
           '50': '#fff0f8',
