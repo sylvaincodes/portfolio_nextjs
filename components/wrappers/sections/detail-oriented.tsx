@@ -8,9 +8,9 @@ function DetailOriented() {
         <div className={clsx('mb-8')}>
             <Container>
                 <SectionTitle
-                    title="Comprehensible and Optimized Code."
-                    caption="Pretty & Optimized"
-                    description="Writing clean code is a top priority while keeping it as optimized as possible."
+                    title="Keen Eye for Spotting Small Details."
+                    caption="Detail Oriented"
+                    description="Awareness to ease of access, User Interface consistency, and improved User Experience."
                 />
             </Container>
         </div>
