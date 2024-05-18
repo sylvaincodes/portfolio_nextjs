@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss"
 import colors from 'tailwindcss/colors'
-const defaultTheme = require("tailwindcss/defaultTheme");
 
 const svgToDataUri = require("mini-svg-data-uri");
 
@@ -37,9 +36,11 @@ const config = {
       colors: {
 
         slate: colors.slate,
-
+        gray: colors.gray,
+        green: colors.green,
+        transparent: "transparent",
         dark: "#0c1222",
-    
+
         // rose
         primary: {
           '50': '#fff0f8',
@@ -99,23 +100,27 @@ const config = {
       },
 
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+        "moov-down": {
+          from: { transform: "translateY(-100px)", },
+          to: { transform: "translateY(0)", },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        "moov-up": {
+          from: { transform: "translateY(0)", },
+          to: { transform: "translateY(-100px)", },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "moov-down": "moov-down 1s ease-in",
+        "moov-up": "moov-down 1s ease-in",
       },
     },
 
   },
   plugins: [require("tailwindcss-animate"),
+  require('tailwindcss-accent')({
+    colors: ['violet', 'blue', 'red'],
+    root: 'red',
+  }),
     addVariablesForColors,
   function ({ matchUtilities, theme }: any) {
     matchUtilities(

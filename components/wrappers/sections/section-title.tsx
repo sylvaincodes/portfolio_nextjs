@@ -44,7 +44,7 @@ export const SectionTitle = ({
         transition={{ duration: 0.4, ease: "easeOut" }}
 
         className={clsx(
-          'text-primary-400 mb-2 block font-black',
+          'text-primary-800 tracking-wide text-2xl mb-2 block font-black',
           'lg:mb-4',
           'dark:text-accent-400'
         )}
@@ -73,12 +73,19 @@ export const SectionTitle = ({
         {description}
       </m.p>
       {button && (
-        <div className={clsx('mt-4', 'md:mt-6')}>
-          <Link href={button.href} className={clsx('button button--soft')}>
+        <m.div
+          initial={animation.hide}
+          whileInView={animation.show}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, ease: "easeOut", delay: 0.8 }}
+
+          className={clsx('mt-4', 'md:mt-6')}>
+          <Link href={button.href} target="_blank" className={clsx('inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent px-4 text-center text-sm font-bold transition duration-150',
+            'md:rounded-xl', 'bg-accent-600/[0.08] text-accent-600 rounded-full px-5 font-bold', 'dark:bg-accent-400/10 dark:text-accent-100 dark:font-semibold hover:dark:bg-primary-900/100 hover:dark:text-slate-100 hover:text-slate-900')}>
             {button.title}
             <ChevronRightIcon className="mt-0.5 h-3 w-3" />
           </Link>
-        </div>
+        </m.div>
       )}
     </div>
   );

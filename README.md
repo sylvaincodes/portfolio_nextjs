@@ -1,6 +1,6 @@
-# Next Js Full Stack Portfolio With Framer Motion, Tailwind CSS, MongoDB, Prisma.
+# Next Js Frontend Portfolio With Framer Motion, Tailwind CSS.
 
-This is the best full stack portfolio with a beautiful and animated design ui. 
+This is the best animated portfolio with a beautiful and amazing design ui. 
 
 ## Our goal
 
@@ -58,20 +58,8 @@ Use the ` git clone ` CLI to clone template directly  to your machine
 
 4. KIT UI : Container - Colors - Fonts 
 
-5. Setup Prisma and Mongo DB 
-      
-      - Install
-      ```bash
-         npm i -D prisma && npm i @prisma/client && npx prisma init
-         npm install mongodb
-      ```
-      
-      - Set up Db Mongo to prisma.ts
-      ```bash
-        npx prisma db push
-      ```
 
-6. Landing Page
+5. Landing Page
     - Header
     - Footer
     - Hero
@@ -83,25 +71,16 @@ Use the ` git clone ` CLI to clone template directly  to your machine
 8. Blog page
     - Main content
 
-9. TIL page
-    - Main content
-    
-10. Skills page
-    - Main content
-    
-11. Studio page
+9. Contact page
     - Main content
 
-12. Contact page
-    - Main content
+10. Test
 
-13. Test
-
-14. Deploy to Netlify
+11. Deploy to Netlify
 
 
 ## Questions
 
-If you have any issues or questions [Send a comment] (https://www.youtube.com/channel/UCmPmOdDw941pdi8YmIPjyEA) on Youtube or reach out me on [Discord](https://discord.com/channels/1234070993996091503/1234070994512248853)
+If you have any issues or questions [Send a comment] (https://www.youtube.com/@sylvaincodes593) on Youtube or reach out me on [Discord](https://discord.com/channels/1234070993996091503/1234070994512248853)
 
 

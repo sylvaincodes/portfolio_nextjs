@@ -11,20 +11,20 @@ import QuickAccess from '@/components/ui/quick-access';
 
 const HeaderOne = () => {
 
-    const isScrolled = useOnScroll(0);
+    const isScrolled = useOnScroll(360);
 
     return (
-        <header className={clsx('absolute h-[72px] top-0 bg-transparent  inset-x-0 z-[1000]', 
-        // isScrolled && 'sticky backdrop-blur shadow-sm dark:shadow-slate-500'
+        <header className={clsx('transition-all absolute h-[72px] top-0 bg-transparent inset-x-0 z-[1000]',
+            isScrolled && 'animate-moov-down absolute top-0 sticky backdrop-blur shadow-sm dark:shadow-slate-500'
         )}>
-            <QuickAccess/>
+            <QuickAccess />
             <Container>
                 <Row className='justify-between'>
                     <Row className='gap-4 lg:gap-12 w-auto'>
                         <NavLogo href="/" title="home" />
                         <NavMenus />
                     </Row>
-                    <IconsGroups  />
+                    <IconsGroups />
                 </Row>
             </Container>
 

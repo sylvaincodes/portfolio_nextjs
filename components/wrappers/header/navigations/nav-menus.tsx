@@ -14,8 +14,8 @@ const NavMenus = () => {
 
                     {
                         routes && routes.map((item, idx) => (
-                            <li>
-                                <NavLink key={idx} title={item.title} href={item.href} icon={item.icon} />
+                            <li key={idx}>
+                                <NavLink title={item.title} href={item.href} icon={item.icon} />
                             </li>
                         ))
                     }

@@ -1,12 +1,11 @@
+import useContentActivity from '@/hooks/useContentActivity';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 import Link from 'next/link';
-
-import useContentActivity from '@/hooks/useContentActivity';
-
 import { relativeTime } from '@/helpers/date';
-
 import type { TContentActivity, TContentActivityReaction } from '@/types';
+import { activity as data } from '@/constants';
+
 
 interface ActivityItemProps {
   data: TContentActivity;
@@ -107,11 +106,12 @@ interface ActivityProps {
   onItemClick?: () => void;
 }
 
-function Activity({ onItemClick = () => {} }: ActivityProps) {
-  const { data, isLoading } = useContentActivity();
+function Activity({ onItemClick = () => { } }: ActivityProps) {
+  // const { data, isLoading } = useContentActivity();
+
 
   const renderData = () => {
-    if (isLoading) {
+    if (!data) {
       return (
         <m.div
           className={clsx('text-sm text-slate-700', 'dark:text-slate-400')}

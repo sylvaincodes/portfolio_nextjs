@@ -28,7 +28,7 @@ const HeroCta = () => {
                 transition={{ delay: 0.4 }}
             >
                 <Button variant="primary_full">
-                    <Link href="/">
+                    <Link href="/contact">
                         get in touch
                     </Link>
                 </Button>

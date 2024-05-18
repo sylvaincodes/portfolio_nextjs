@@ -162,8 +162,8 @@ function Footer() {
     return (
         <footer
             className={clsx(
-                'bg-grid-slate-100/100 [mask-image:linear-gradient(transparent,black,black)] dark:before:bg-grid-slate-800/100 border-divider-light mt-24 pt-16 text-sm text-slate-900',
-                'dark:border-divider-dark dark:text-slate-200'
+                'bg-grid-slate-100/100 [mask-image:linear-gradient(transparent,black,black)] ',
+                'dark:bg-grid-slate-900/100'
             )}
         >
             <Container>
@@ -186,9 +186,9 @@ function Footer() {
 
                                         {
                                             title: 'Skills and Tools',
-                                            href: '/skills-and-tools',
+                                            href: '#',
                                         },
-                                        { title: 'Studio', href: '/studio' },
+                                        { title: 'Studio', href: '#' },
                                     ]}
                                 />
                                 <FooterGroup
@@ -196,7 +196,7 @@ function Footer() {
                                     links={[
                                         {
                                             title: 'Docs',
-                                            href: '/docs',
+                                            href: '#',
                                         },
                                         {
                                             title: 'Personal Blog',
@@ -204,7 +204,7 @@ function Footer() {
                                         },
                                         {
                                             title: 'T.I.L',
-                                            href: '/today-i-learned',
+                                            href: '#',
                                             label: 'new',
                                         },
                                     ]}
@@ -214,19 +214,15 @@ function Footer() {
                                 <FooterGroup
                                     title="This Site"
                                     links={[
-                                        {
-                                            title: 'Design Concept',
-                                            href: 'https://www.figma.com/community/file/1176392613303840973',
-                                            isInternal: false,
-                                        },
+
                                         {
                                             title: 'Source Code',
-                                            href: 'https://github.com/enjidev/enji.dev',
+                                            href: 'https://github.com/sylvaincodes',
                                             isInternal: false,
                                         },
                                         {
                                             title: 'Credits',
-                                            href: '/credits',
+                                            href: '#',
                                         },
                                     ]}
                                 />

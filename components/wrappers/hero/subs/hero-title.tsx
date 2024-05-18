@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { m, useAnimationControls } from 'framer-motion'
 
+
 const HeroTitle = () => {
 
     const animation = {
@@ -75,7 +76,8 @@ const HeroTitle = () => {
                     animate={animation.show}
                     transition={{ delay: 0.3 }}
 
-                    className={clsx('block text-xs sm:text-sm md:text-xl leading-8', 'dark:text-slate-400 text-slate-600')}
+                    className={clsx('block text-slate-600 text-xs sm:text-sm md:text-2xl leading-8', 
+                    'dark:text-slate-400')}
                 >
 
                     <strong className={clsx(

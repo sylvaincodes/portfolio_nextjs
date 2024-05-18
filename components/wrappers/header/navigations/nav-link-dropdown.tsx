@@ -67,7 +67,7 @@ function NavLinkDropdown({ title, items }: NavLinkDropdownProps) {
                                         {({ active }) => (
                                             <LinkRef
                                                 href={item.href}
-                                                className={clsx('text-accent-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold dark:text-accent-400 dark:font-semibold hover:text-accent-700 hover:dark:text-accent-300 h-8 text-xs', [
+                                                className={clsx('text-accent-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold dark:text-accent-400 dark:font-semibold hover:text-accent-700 hover:dark:text-accent-300 h-8 text-xs','dark:text-slate-100', [
                                                     active && 'rounded-lg bg-slate-100 dark:bg-slate-800/50',
                                                 ])}
                                             >

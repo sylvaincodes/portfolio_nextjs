@@ -8,9 +8,10 @@ export type NavLinkProps = {
     icon?: IconType;
 };
 
-export const NavLink = ({ title, icon: Icon, href }:  NavLinkProps ) => {
+export const NavLink = ({ title, icon: Icon, href }: NavLinkProps) => {
     return (
-        <Link href={href} className={clsx('text-primary-900 font-bold capitalize hover:font-extrabold dark:text-primary-300')}>
+        <Link href={href} className={clsx('text-primary-900 font-bold capitalize',
+            '', 'dark:text-primary-300')}>
             {title}
             {/* <Icon /> */}
         </Link>

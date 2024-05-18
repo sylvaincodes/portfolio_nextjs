@@ -10,11 +10,7 @@ import FeaturedCard from '../cards/featured-card'
 
 const HeroOne = () => {
     return (
-        <div className="pt-36 before:bg-grid-slate-300/80 
-        before:absolute before:inset-0 before:z-[-1] 
-        before:[mask-image:linear-gradient(transparent,black,transparent)] 
-        dark:before:bg-grid-slate-800/100">
-
+        <div className={clsx('pt-36 bg-grid-slate-100/100 [mask-image:linear-gradient(black,black,black)] ', 'dark:bg-grid-slate-900/100')}>
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-2 h-full w-full'>
                     <div className='flex flex-col gap-8 h-full justify-center'>
@@ -73,13 +69,8 @@ const HeroOne = () => {
 
                 </div>
             </Container>
-
         </div>
     )
 }
 
 export default HeroOne
-
-// h-[50rem] w-full relative z-0 bg-white dark:bg-dark before:bg-grid-slate-300/80 dark:before:bg-grid-slate-900/100 before:absolute before:inset-0 before:[mask-image:linear-gradient(transparent,black,transparent)]
-//         bg-transparent bg-gradient-to-b from-slate-100 via-slate-100 dark:bg-transparent dark:from-dark dark:via-dark
-//         flex items-center justify-center pt-36 pb-20 

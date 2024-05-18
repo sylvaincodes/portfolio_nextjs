@@ -26,9 +26,13 @@ export type TPageOgImage = Partial<
 
 export type TPostFrontMatter = TBaseFrontMatter & {
   date: string;
-  lang: 'id' | 'en';
+  lang: string;
   tags: Array<string>;
   category: string;
+  title: string;
+  description: string;
+  caption: string;
+  pinned: boolean
 };
 
 export type TPostOgImage = Partial<

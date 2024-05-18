@@ -1,5 +1,5 @@
 import "./globals.css";
-import { ibm } from "./fonts";
+import { font } from "./fonts";
 import Providers from "@/providers";
 import clsx from "clsx";
 
@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx('dark:bg-dark', ibm.className)} >
+      <body className={clsx('dark:bg-dark', 'min-h-screen', font.className)} >
         <Providers>
           {children}
         </Providers>

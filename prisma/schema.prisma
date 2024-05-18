@@ -17,12 +17,13 @@ model ContentMeta {
   id String @id @default(auto()) @map("_id") @db.ObjectId
 
   type      ContentType
+  // pinned    Boolean     @default(false)
   title     String
-  slug      String     @unique
+  slug      String      @unique
   views     View[]
   shares    Share[]
   reactions Reaction[]
-  createdAt DateTime   @default(now())
+  createdAt DateTime    @default(now())
 }
 
 enum ContentType {

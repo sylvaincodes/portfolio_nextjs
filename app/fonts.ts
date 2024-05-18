@@ -1,11 +1,6 @@
-import localFont from "next/font/local"
-import { Fira_Code } from 'next/font/google'
+import { Josefin_Sans } from 'next/font/google'
 
-export const ibm = Fira_Code({
+export const font = Josefin_Sans({
     subsets: ['latin'],
     weight: ['400', '700']
-})
-
-export const local = localFont({
-    src: "../public/fonts/PlusJakartaSans-Regular.ttf"
 })

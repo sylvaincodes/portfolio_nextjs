@@ -2,16 +2,23 @@ import React, { PropsWithChildren } from 'react'
 import GlobalStateProvider from './GlobalStateProvider'
 import { ThemeProvider } from 'next-themes';
 import FramerMotionProvider from './FramerMotionProvider';
+import ToasterProvider from './ToastProvider';
+import {
+    TooltipProvider
+} from "@/components/ui/tooltip"
 
 export default function Providers({ children }: PropsWithChildren) {
     return (
-        <FramerMotionProvider>
-            <ThemeProvider attribute="class" disableTransitionOnChange>
-                <GlobalStateProvider>
+        <TooltipProvider>
+            <FramerMotionProvider>
+                <ThemeProvider attribute="class" disableTransitionOnChange>
+                    <GlobalStateProvider>
+                        <ToasterProvider />
                         {children}
-                </GlobalStateProvider>
-            </ThemeProvider>
-        </FramerMotionProvider>
+                    </GlobalStateProvider>
+                </ThemeProvider>
+            </FramerMotionProvider>
+        </TooltipProvider>
 
     )
 }

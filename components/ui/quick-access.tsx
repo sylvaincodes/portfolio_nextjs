@@ -27,7 +27,7 @@ function QuickAccess() {
       initialFocus={closeButtonRef}
       open={isQuickAccessOpen}
       onClose={() => setQuickAccessOpen(false)}
-      className={clsx('relative z-[1001]')}
+      className={clsx('relative z-[1001] ')}
     >
       <m.div
         variants={animation}

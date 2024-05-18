@@ -1,4 +1,4 @@
-import dayjs from '@/utils/dayjs';
+import dayjs from '@/lib/utils';
 import { getBaseUrl, getParams } from '@/helpers/url';
 
 import type { TPostFrontMatter, TPostOgImage } from '@/types';

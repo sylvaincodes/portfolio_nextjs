@@ -29,7 +29,7 @@ const QuotoOne = () => {
         >
             <Container>
                 <Row className='justify-center'>
-                    <blockquote className='text-xl sm:text-3xl lg:text-5xl text-slate-500 flex gap-2 items-start tracking-tighter'>
+                    <blockquote className='text-xl sm:text-3xl lg:text-5xl text-slate-500 flex gap-2 items-start tracking-tighter dark:text-slate-400'>
                         <QuoteIcon
                             className={clsx('h-10 text-slate-300', 'md:-mt-3 md:h-16 lg:h-24',
                                 'dark:text-slate-800'
@@ -39,11 +39,11 @@ const QuotoOne = () => {
                             <div className='capitalize font-thin italic '>beautiful</div>
                             <div className='flex items-center gap-2'>
                                 <span className='w-10 h-0.5 bg-slate-400'></span>
-                                <strong className='font-extrabold text-slate-600'> inside </strong>
-                                and <strong className='font-extrabold text-slate-600'>out </strong>
+                                <strong className='font-extrabold text-slate-600 dark:text-slate-300'> inside </strong>
+                                and <strong className='font-extrabold text-slate-600 dark:text-slate-300'>out </strong>
                                 <span className='w-10 h-0.5 bg-slate-400'></span>
                             </div>
-                            <span>is a <strong className='font-extrabold text-slate-600 rounded-xl p-1 bg-slate-100'>must.</strong></span>
+                            <span>is a <strong className='font-extrabold text-slate-600 rounded-xl p-1 bg-slate-100 dark:bg-slate-800 dark:text-slate-300'>must.</strong></span>
                         </div>
                     </blockquote>
                 </Row>
